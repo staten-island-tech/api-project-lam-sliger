@@ -1,15 +1,16 @@
 import { DOMSelectors } from "./DOM";
-import { genres } from "./genre";
 
-const key = "e0f5ea7719664f64b7a9b7dfcf251380";
+const key = "2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649";
 
 const query = async function () {
   try {
-    const result = await fetch(
-      " https://www.bungie.net/Platform/Destiny2/0/Profile/28007537/Item/{itemInstanceId}/.gte=8&api_key=${key}"
+    const response = await fetch(
+      "https://www.worldcoinindex.com/apiservice/json?key=2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649"
     );
-    const data = await Response.json();
-    console.log(data);
+    const data = await response.json();
+    data.results.forEach((coin) => {
+      DOMSelectors.grid.insertAdjacentHTML("beforeend", "html");
+    });
   } catch (error) {
     console.log(error);
     alert("something went wrong");
