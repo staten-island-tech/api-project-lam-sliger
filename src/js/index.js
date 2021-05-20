@@ -16,9 +16,9 @@ const query = async function () {
        <div class="price-to-Bitcoin">
      
        </div>
-         <h3 class="currenecy-name"> ${Name} </h3>
-           <p class="price-to-USD">${Price}</p>
-           <p class="Price-to-Bitcoin">${Volume_24h}</p>
+         <h3 class="currenecy-name"> ${Coin.Name} </h3>
+           <p class="price-to-USD">${Coin.Price}</p>
+           <p class="Price-to-Bitcoin">${Coin.Volume_24h}</p>
        </div>
      </div> 
    </section>`)
