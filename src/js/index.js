@@ -22,6 +22,7 @@ const query = async function () {
        </div>
      </div> 
    </section>`)
+   
     });  
   } catch (error) {
     console.log(error);
