@@ -17,5 +17,8 @@
   },
   "browserslist": [
     "since 2017-06"
-  ]
+  ],
+  "dependencies": {
+    "search.js": "^1.0.0"
+  }
 }

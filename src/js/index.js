@@ -1,4 +1,5 @@
 import { DOMSelectors } from "./DOM";
+import { Search } from "search.js";
 
 const key = "2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649";
 

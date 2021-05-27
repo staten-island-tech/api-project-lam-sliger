@@ -1,6 +1,6 @@
 import { DOMSelectors } from "./DOM";
 import { genres } from "./genre";
-const key = "2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649&fiat";
+const key = "2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649";
 const listen = function () {
   DOMSelectors.searchForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -29,6 +29,7 @@ const listen = function () {
          </div> 
        </section>`
           );
+          console.log(Coin.Name);
         });
       } catch (error) {
         console.log(error);
