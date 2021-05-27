@@ -1,5 +1,8 @@
 $font-main: "Asap", sans-serif;
 $font-second: "Josefin Slab", serif;
+
+@import "_search.scss";
+
 html,
 body {
   box-sizing: border-box;
@@ -114,4 +117,9 @@ body {
 .test {
   color: black;
   font-size: 3rem;
+}
+
+.search-header-link {
+  display: flex;
+  justify-content: center;
 }
