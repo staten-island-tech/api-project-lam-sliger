@@ -8,11 +8,10 @@ const listen = function () {
     const searchQuery = async function () {
       try {
         const response = await fetch(
-          `https://www.worldcoinindex.com/apiservice/ticker?key=2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649&label=${SearchParams}&fiat=usd`
+          `https://www.worldcoinindex.com/apiservice/ticker?key=2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649&label=${searchParams}&fiat=usd`
         );
         console.log(data.Markets);
         const data = await response.json();
-        console.log(data.Markets);
         data.Markets.forEach((Coin) => {
           DOMSelectors.grid.insertAdjacentHTML(
             "beforeend",
