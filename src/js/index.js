@@ -5,7 +5,7 @@ const key = "2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649";
 const query = async function () {
   try {
     const response = await fetch(
-      `https://www.worldcoinindex.com/apiservice/ticker?key=2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649&label=ethbtc-ltcbtc-btcbtc&fiat=btc`
+      `https://www.worldcoinindex.com/apiservice/ticker?key=2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649&label=ethbtc-ltcbtc-btcbtc-&fiat=btc`
     );
     const data = await response.json();
     console.log(data.Markets);

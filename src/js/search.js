@@ -1,4 +1,4 @@
-import { DOMSelectors } from "./DOM";
+import { DOMSelectors } from "./DOM2";
 const listen = function () {
   DOMSelectors.searchForm.addEventListener("submit", function (e) {
     e.preventDefault();
