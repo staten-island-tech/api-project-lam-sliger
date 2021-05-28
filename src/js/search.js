@@ -6,6 +6,7 @@ const listen = function () {
     const searchParams = DOMSelectors.searchArea.value;
 
     const searchQuery = async function () {
+      console.log("async");
       try {
         const response = await fetch(
           `https://www.worldcoinindex.com/apiservice/ticker?key=2oslZGi4GkzHKexsxM0XXFrn7FZ9uRkY649&label=${searchParams}&fiat=usd`
@@ -16,16 +17,16 @@ const listen = function () {
           DOMSelectors.grid.insertAdjacentHTML(
             "beforeend",
             `<section class="currency">
-          <div class="price-to-USD">
-           <div class="price-to-Bitcoin">
-         
-           </div>
-             <h3 class="currency-name"> ${Coin.Name} </h3>
-               <p class="price-to-USD">${Coin.Price}</p>
-               <p class="Price-to-Bitcoin">${Coin.Volume_24h}</p>
-           </div>
-         </div> 
-       </section>`
+      <div class="price-to-USD">
+       <div class="Price-to-Bitcoin"> 
+     
+       </div>
+         <h3 class="currency-name"> ${Coin.Name} </h3>
+           <p class="price-to-USD">${Coin.Price}</p>
+           <p class="Price-to-Bitcoin">${Coin.Volume_24h}</p>
+       </div>
+     </div> 
+   </section>`
           );
           console.log(DOMSelectors.grid);
         });
