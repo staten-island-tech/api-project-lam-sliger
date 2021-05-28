@@ -2,7 +2,7 @@ import { DOMSelectors } from "./DOM";
 const listen = function () {
   DOMSelectors.searchForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    DOMSelectors.grid.innerHTML = "";
+    /* DOMSelectors.grid.innerHTML = ""; */
     const searchParams = DOMSelectors.searchArea.value;
 
     const searchQuery = async function () {
